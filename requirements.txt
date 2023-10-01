@@ -1,0 +1,9 @@
+numpy
+pandas
+Flask
+pdfplumber
+openpyxl
+pdfminer.six
+spacy
+mysql-connector-python==8.0.17
+-e .

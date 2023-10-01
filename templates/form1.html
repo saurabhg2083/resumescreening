@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Content here -->
+        <div class="row">
+            <div class="col-sm-12">
+                <h1>Different way of thinking in the HR process</h1>
+            </div>
+        </div>
+        <br />
+
+
+        <div class="row">
+            <div class="col-sm-12">
+                <form action="{{url_for('predict_datapoint')}}" method="POST">
+
+                    <div class="row">
+
+                        <label for="Must_Haves_str1" class="col-sm-1 col-form-label">Must Have:</label>
+                        <div class="col-sm-3 form-group ">
+                            <input type="text" id="Must_Haves_str1" required name="Must_Haves_str1" class="form-control"
+                                placeholder="Enter value Comma (,) seperated strings">
+                        </div>
+                        <label for="Must_Haves_str2" class="col-sm-1 col-form-label">OR</label>
+                        <div class="col-sm-1 form-group ">
+                            <input type="text" id="Must_Haves_str2" required name="Must_Haves_str2" class="form-control"
+                                placeholder="Enter value Comma (,) seperated strings">
+                        </div>
+                        <label for="Must_Haves_str3" class="col-sm-1 col-form-label">OR</label>
+                        <div class="col-sm-1 form-group ">
+                            <input type="text" id="Must_Haves_str3" required name="Must_Haves_str3" class="form-control"
+                                placeholder="Enter value Comma (,) seperated strings">
+                        </div>
+
+
+
+                        <label for="Exclusions_str1" class="col-sm-1 col-form-label">Exclusions:</label>
+                        <div class="col-sm-3 form-group ">
+                            <input type="text" id="Exclusions_str1" required name="Exclusions_str1" class="form-control"
+                                placeholder="Enter value Comma (,) seperated strings">
+                        </div>
+                        <label for="Exclusions_str2" class="col-sm-1 col-form-label">OR</label>
+                        <div class="col-sm-1 form-group ">
+                            <input type="text" id="Exclusions_str2" required name="Exclusions_str2" class="form-control"
+                                placeholder="Enter value Comma (,) seperated strings">
+                        </div>
+                        <label for="Exclusions_str3" class="col-sm-1 col-form-label">OR</label>
+                        <div class="col-sm-1 form-group ">
+                            <input type="text" id="Exclusions_str3" required name="Exclusions_str3" class="form-control"
+                                placeholder="Enter value Comma (,) seperated strings">
+                        </div>
+
+                        <label for="Good_to_have_str1" class="col-sm-1 col-form-label">Good to have:</label>
+                        <div class="col-sm-3 form-group ">
+                            <input type="text" id="Good_to_have_str1" required name="Good_to_have_str1" class="form-control"
+                                placeholder="Enter value Comma (,) seperated strings">
+                        </div>
+                        <label for="Good_to_have_str2" class="col-sm-1 col-form-label">OR</label>
+                        <div class="col-sm-1 form-group ">
+                            <input type="text" id="Good_to_have_str2" required name="Good_to_have_str2" class="form-control"
+                                placeholder="Enter value Comma (,) seperated strings">
+                        </div>
+                        <label for="Good_to_have_str3" class="col-sm-1 col-form-label">OR</label>
+                        <div class="col-sm-1 form-group ">
+                            <input type="text" id="Good_to_have_str3" required name="Good_to_have_str3" class="form-control"
+                                placeholder="Enter value Comma (,) seperated strings">
+                        </div>
+                   
+                        <div class="col-sm-4 form-group">
+                            <input type="submit" class="btn btn-primary" value="Submit">
+                        </div>
+                    </div>
+
+                 
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
