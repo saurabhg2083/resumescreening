@@ -4,6 +4,7 @@ Flask
 pdfplumber
 openpyxl
 pdfminer.six
-spacy
+spacy==3.6.0
 mysql-connector-python==8.0.17
+https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-3.6.0/en_core_web_sm-3.6.0.tar.gz
 -e .
