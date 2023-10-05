@@ -41,6 +41,10 @@ class CustomData:
     
     def get_Must_Haves(self):
         try:
+            Must_Haves_list = [item.strip().split(',') for item in Must_Haves_str1.split(';') if item.strip()]
+            Must_Haves = [[item for item in inner_list if item.strip()] for inner_list in Must_Haves_list]
+            
+            '''
             Must_Haves_list1, Must_Haves_list2, Must_Haves_list3, Must_Haves = [], [], [], []
             if self.Must_Haves_str1 != None and self.Must_Haves_str1 != "":
                 Must_Haves_list1 = [item.strip() for item in self.Must_Haves_str1.split(',')]
@@ -54,6 +58,7 @@ class CustomData:
                 Must_Haves_list3 = [item.strip() for item in self.Must_Haves_str3.split(',')]
                 Must_Haves_list3 = [item for item in Must_Haves_list3 if item]
                 Must_Haves.append(Must_Haves_list3)
+            '''            
 
             #df = pd.DataFrame(custom_data_input_dict)
             logging.info('JDK Created')
@@ -65,6 +70,9 @@ class CustomData:
 
     def get_Exclusions(self):
         try:
+            Exclusions_list = [item.strip().split(',') for item in Exclusions_str1.split(';') if item.strip()]
+            Exclusions = [[item for item in inner_list if item.strip()] for inner_list in Exclusions_list]
+            '''
             Exclusions_list1, Exclusions_list2, Exclusions_list3, Exclusions = [], [], [], []
             if self.Exclusions_str1 != None and self.Exclusions_str1 != "":
                 Exclusions_list1 = [item.strip() for item in self.Exclusions_str1.split(',')]
@@ -80,6 +88,8 @@ class CustomData:
                 Exclusions_list3 = [item.strip() for item in self.Exclusions_str3.split(',')]
                 Exclusions_list3 = [item for item in Exclusions_list3 if item]
                 Exclusions.append(Exclusions_list3)
+            '''
+            
 
             #df = pd.DataFrame(custom_data_input_dict)
             logging.info('JDK Created')
@@ -91,6 +101,9 @@ class CustomData:
 
     def get_Good_to_have(self):
         try:
+            Good_to_have_list = [item.strip().split(',') for item in Good_to_have_str1.split(';') if item.strip()]
+            Good_to_have = [[item for item in inner_list if item.strip()] for inner_list in Good_to_have_list]
+            '''
             Good_to_have_list1, Good_to_have_list2, Good_to_have_list3, Good_to_have = [], [], [], []
             if self.Good_to_have_str1 != None and self.Good_to_have_str1 != "":
                 Good_to_have_list1 = [item.strip() for item in self.Good_to_have_str1.split(',')]
@@ -104,6 +117,7 @@ class CustomData:
                 Good_to_have_list3 = [item.strip() for item in self.Good_to_have_str3.split(',')]
                 Good_to_have_list3 = [item for item in Good_to_have_list3 if item]
                 Good_to_have.append(Good_to_have_list3)
+            '''
 
             #df = pd.DataFrame(custom_data_input_dict)
             logging.info('JDK Created')
