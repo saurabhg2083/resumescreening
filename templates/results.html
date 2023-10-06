@@ -23,12 +23,17 @@
                 <label>Must Have: {{final_result['Must_Haves']}}</label><br/>
                 <label>Exclusion: {{final_result['Exclusions']}}</label><br/>
                 <label>Good to Have: {{final_result['Good_to_have']}}</label><br/>
-                <label>Files: {{final_result['filepaths']}}</label><br/>
-                
+                <!-- <label>Files: {{final_result['filepaths']}}</label><br/> -->
+                <!-- <label>Files: {{final_result['file_url']}} <a href="{{ url_for('download_file', filename=final_result['file_url']) }}">Download</a></label><br/>
+                 -->
                 <br/>
-                <a id="test" class="btn btn-primary" href="{{ url_for('download', filename=final_result['report_data']) }}" target="_blank">Download the Excel</a>
+                <a id="test" class="btn btn-primary" href="{{ url_for('download', filename=final_result['report_data']) }}" target="_blank">Download Report 1</a>
                 <a id="testzip" class="btn btn-primary" href="{{ url_for('downloadFile', filename=final_result['zipfolder']) }}" target="_blank">Zip</a>
+                <a id="testzip" class="btn btn-primary" href="{{ url_for('download', filename=final_result['report2_data_excel']) }}" target="_blank">Download Report 2</a>
+                
             </div>
+
+            <div><pre> {{final_result['report2_data']}}</div>
         </div>
         <br />
     </div>
